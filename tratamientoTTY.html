@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #fff;
+        }
+        pre {
+            background-color: #222;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        code {
+            color: #00ff00; /* Color para el código */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bash</h1>
+    <p>Ejecutamos estos comandos uno a uno para obtener una bash interactiva.</p>
+    <pre><code>
+        script /dev/null -c bash
+    </code></pre>
+    <pre><code>
+        Ctrl + z
+    </code></pre>
+    <pre><code>
+        stty raw -echo; fg
+    </code></pre>
+    <pre><code>
+        reset xterm
+    </code></pre>
+    <pre><code>
+        export TERM=xterm
+    </code></pre>
+    <pre><code>
+        export TERM=xterm
+    </code></pre>
+    <p>Ahora ajustamos las proporciones de la bash, para ello nos vamos a una ventana aparte y miramos las medidas de nuestra ventana.</p>
+    <pre><code>
+        stty size
+    </code></pre>
+    <p>Ahora seteamos las filas y las columnas.</p>
+    <pre><code>
+        stty rows 53 columns 189
+    </code></pre>
+    <h1>Python</h1>
+    <pre><code>
+        python -c 'import pty; pty.spawn("/bin/bash")'
+    </code></pre>
+    <pre><code>
+        python3 -c 'import pty; pty.spawn("/bin/sh")'
+    </code></pre>
+</body>
+</html>
